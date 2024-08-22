@@ -12,6 +12,7 @@ int32_t main()
 #ifndef ONLINE_JUDGE
     freopen("../files/input.txt", "r", stdin);
     freopen("../files/output.txt", "w", stdout);
+//     g++ .\BitwiseManipulation.cpp; .\a.exe
 #endif
    int x;
     cin >> x;
