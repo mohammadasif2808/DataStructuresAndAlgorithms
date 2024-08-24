@@ -6,6 +6,13 @@ Odd Even Using Bitwise
 
 **********************************************************************************
 Get/Set/Clear/Update/ClearLastIBits/ClearRangeOfBits/ReplaceBits
+
 2 Bit of 5 is 1
+
 After clearing 2 bit of 13 the no formed is 9
+
 After setting 1 bit of 5 the no formed is 7
+
+After updating 1 bit of 13 with 1 the no formed is 15
+
+After clearing last 2 bits of 15 the no formed is 12

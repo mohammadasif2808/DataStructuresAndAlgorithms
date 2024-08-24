@@ -23,8 +23,17 @@ int setIthBit(int n, int i){
     return n;
 }
 
-void updateIthBit(int n, int i, int v){
-    
+int updateIthBit(int n, int i, int v){
+    n = clearIthBit(n,i);
+    int mask = (v<<i);
+    n = n | mask;
+    return n;
+}
+
+int clearLastIBits(int n, int i){
+    int mask = (-1<<i);
+    n = n & mask;
+    return n;
 }
 
 int32_t main()
@@ -58,14 +67,23 @@ cout<<"\n***********************************************************************
     int n=5;
     int i=2;
 
-    cout<< i<<" Bit of "<<n << " is " << getIthBit(n,i) <<endl;
+    cout<<endl<< i<<" Bit of "<<n << " is " << getIthBit(n,i) <<endl;
 
     n=13;
     i=2;
-    cout<< "After clearing "<<i<< " bit of "<<n <<" the no formed is "<< clearIthBit(n,i)<<endl;
+    cout<<endl<< "After clearing "<<i<< " bit of "<<n <<" the no formed is "<< clearIthBit(n,i)<<endl;
 
     n=5;
     i=1;
-    cout<< "After setting "<<i<< " bit of "<<n <<" the no formed is "<< setIthBit(n,i)<<endl;
+    cout<<endl<< "After setting "<<i<< " bit of "<<n <<" the no formed is "<< setIthBit(n,i)<<endl;
+
+    n=13;
+    i=1;
+    int v = 1;
+    cout<<endl<< "After updating "<<i<< " bit of "<<n <<" with "<<v <<" the no formed is "<< updateIthBit(n,i,v)<<endl;
+
+    n=15;
+    i=2;
+    cout<<endl<< "After clearing last "<<i<< " bits of "<<n <<" the no formed is "<< clearLastIBits(n,i)<<endl;
 }
 
