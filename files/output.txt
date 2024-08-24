@@ -1,0 +1,11 @@
+0 Bitwise NOT is -1
+
+**********************************************************************************
+Odd Even Using Bitwise
+21 is Odd
+
+**********************************************************************************
+Get/Set/Clear/Update/ClearLastIBits/ClearRangeOfBits/ReplaceBits
+2 Bit of 5 is 1
+After clearing 2 bit of 13 the no formed is 9
+After setting 1 bit of 5 the no formed is 7
